@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>⭐ Custom Reroll System</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⭐ Custom Reroll System</h1>
+        </div>
+
+        <div class="reroll-section">
+            <div class="input-group">
+                <label for="numRolls">Number of rerolls:</label>
+                <input type="number" id="numRolls" min="1" value="1">
+            </div>
+
+            <div class="button-group">
+                <button id="rerollBtn" class="primary-btn">
+                    <i class="fas fa-dice"></i> Start Rerolling
+                </button>
+                <button id="secretRerollBtn" class="secret-btn">
+                    <i class="fas fa-star"></i> Secret Unit Reroll
+                </button>
+                <button id="resetBtn" class="reset-btn">
+                    <i class="fas fa-undo"></i> Reset
+                </button>
+            </div>
+        </div>
+
+        <div class="result" id="resultText">Click the button to start rerolling.</div>
+
+        <div class="stats-container">
+            <h2>🎲 Roll Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-scroll text-blue"></i>
+                    <p>Rare Skins: <span id="rareSkinCount">0</span></p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-scroll text-purple"></i>
+                    <p>Epic Skins: <span id="epicSkinCount">0</span></p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-scroll text-orange"></i>
+                    <p>Legendary Skins: <span id="legendarySkinCount">0</span></p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-scroll text-red"></i>
+                    <p>Mythic Skins: <span id="mythicSkinCount">0</span></p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-crown text-gold"></i>
+                    <p>Mythic Units: <span id="mythicUnitCount">0</span></p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-crown text-rainbow"></i>
+                    <p>Mythic Shiny Units: <span id="mythicShinyUnitCount">0</span></p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-gift text-secret"></i>
+                    <p>Secret Units: <span id="secretUnitCount">0</span></p>
+                </div>
+            </div>
+
+            <div class="total-stats">
+                <p><i class="fas fa-dice"></i> Total Rolls: <span id="totalRollsCount">0</span></p>
+                <p><i class="fas fa-star"></i> Total Stars Spent: <span id="totalStarsCount">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
